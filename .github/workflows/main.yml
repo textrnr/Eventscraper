@@ -19,11 +19,11 @@ jobs:
         python-version: '3.7' 
         # Optional - x64 or x86 architecture, defaults to x64
         architecture: 'x64' 
-    # You can test your matrix by printing the current Python version
     - name: Setup Git
       run: |
         git config --global user.name "muckelba" 
         git config --global user.email "34460584+muckelba@users.noreply.github.com"
+        git pull
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
