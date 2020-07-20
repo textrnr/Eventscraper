@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 import datetime
 from dateutil.parser import parse
 import json
-import configparser
 
 events = list()
 
@@ -24,4 +23,4 @@ def get_spotlights(url):
 get_spotlights("https://leekduck.com/events/")
 with open('mad-events.json', 'w') as f:
     json.dump(events, f, indent =2)
-    print("writing json")
+    print("[SUCCESS] Saved JSON")
