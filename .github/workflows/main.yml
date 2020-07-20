@@ -31,6 +31,6 @@ jobs:
     - name: Generate and Commit
       run: |
         python generate.py
-        git diff --quiet || echo "committing mad-events.json" && git add mad-events.json && git commit -m "new event" && git push
+        if ! git diff --quiet; then echo "committing mad-events.json" && git add mad-events.json && git commit -m "new event" && git push; else echo "nothing to commit"; fi 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
