@@ -1,0 +1,5 @@
+[main]
+madmin = http://madmin.com
+# Normal MADmin auth
+auth_user = user
+auth_pass = pass
