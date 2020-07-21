@@ -1,6 +1,6 @@
 [main]
 madmin = http://madmin.com
-event_json = https://raw.githubusercontent.com/muckelba/Eventscraper/github-actions/mad-events.json
+event_json = https://raw.githubusercontent.com/muckelba/Eventscraper/master/mad-events.json
 
 # Normal MADmin auth
 auth_user = user
